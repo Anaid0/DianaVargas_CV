@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diana María Vargas Pedraza - Ingeniera de Software</title>
+    <meta name="description" content="Portafolio profesional de Diana María Vargas Pedraza, Ingeniera de Software especializada en desarrollo full stack, Java, Spring Boot, Angular, y tecnologías emergentes como IA y Low Code.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <div class="logo-circle">DV</div>
+                    <span class="logo-text">Diana Vargas</span>
+                </div>
+                
+                <div class="nav-links">
+                    <button class="nav-link active" data-section="about">Sobre Mí</button>
+                    <button class="nav-link" data-section="skills">Habilidades</button>
+                    <button class="nav-link" data-section="education">Educación</button>
+                    <button class="nav-link" data-section="experience">Experiencia</button>
+                    <button class="nav-link" data-section="projects">Proyectos</button>
+                    <button class="nav-link" data-section="contact">Contacto</button>
+                </div>
+
+                <button class="btn btn-primary" id="downloadCV">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Descargar CV
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Hola, soy <span class="text-primary">Diana María Vargas Pedraza</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Ingeniera de Software & Desarrolladora Full Stack
+                    </p>
+                    <p class="hero-description">
+                        Programadora Junior próxima a graduarse, especializada en desarrollo web full stack 
+                        con experiencia en tecnologías modernas. Apasionada por crear soluciones escalables 
+                        e innovadoras, combinando diseño UI/UX con desarrollo backend robusto y herramientas 
+                        de inteligencia artificial y low code.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-lg" data-section="contact">Contáctame</button>
+                        <button class="btn btn-outline btn-lg" data-section="projects">Ver Proyectos</button>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/Anaid0" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/diana-vargas-082b51327" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="mailto:dvaragasp@uniempresarial.edu.co" class="social-link" aria-label="Email">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                        <span class="hero-email">dvaragasp@uniempresarial.edu.co</span>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="image-container">
+                        <div class="image-frame">
+                            <img src="images/profile-photo.jpg" alt="Diana María Vargas Pedraza" class="profile-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section section-muted">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            
+            <div class="flip-cards">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <svg class="flip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            <h3>Desarrollador</h3>
+                            <p>Haz click para ver más</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Experiencia en Desarrollo</h3>
+                            <p>Desarrollo de aplicaciones web y microservicios utilizando Java, Spring Boot, Angular, Express.js y PHP. Especializada en arquitecturas escalables y soluciones empresariales.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <svg class="flip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="9" y1="3" x2="9" y2="21"></line>
+                            </svg>
+                            <h3>Diseñador</h3>
+                            <p>Haz click para ver más</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Diseño UI/UX</h3>
+                            <p>Experiencia en diseño web y creación de interfaces de usuario intuitivas. Conocimientos en experiencia de usuario (UI/UX) y diseño de sistemas visuales atractivos y funcionales.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <svg class="flip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            </svg>
+                            <h3>Base de Datos</h3>
+                            <p>Haz click para ver más</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Gestión de Datos</h3>
+                            <p>Administración y diseño de bases de datos corporativas. Experiencia en organización de inventarios y gestión eficiente de información empresarial.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-box">
+                <h3>Perfil Profesional</h3>
+                <p>
+                    Ingeniera de Software en formación con sólidos conocimientos en desarrollo full stack, 
+                    especializada en PHP, HTML, JavaScript, Java, Spring Boot, Angular y diseño web. 
+                    Me caracterizo por ser una profesional responsable, ordenada y creativa, con gran 
+                    capacidad de adaptación y liderazgo en equipos de trabajo.
+                </p>
+                <p>
+                    Actualmente curso el 6to semestre de Ingeniería de Software en Uniempresarial, 
+                    complementando mi formación académica con experiencia práctica en desarrollo de 
+                    microservicios y soluciones empresariales. Mi enfoque se centra en crear aplicaciones 
+                    escalables utilizando tecnologías modernas, incluyendo herramientas de inteligencia 
+                    artificial y plataformas low code para optimizar procesos de desarrollo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        <h3>Frontend</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="check-icon">✓</span> HTML</li>
+                        <li><span class="check-icon">✓</span> JavaScript</li>
+                        <li><span class="check-icon">✓</span> Angular</li>
+                        <li><span class="check-icon">✓</span> Diseño Web</li>
+                        <li><span class="check-icon">✓</span> UI/UX</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        <h3>Backend</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="check-icon">✓</span> Java</li>
+                        <li><span class="check-icon">✓</span> Spring Boot</li>
+                        <li><span class="check-icon">✓</span> PHP</li>
+                        <li><span class="check-icon">✓</span> Express.js</li>
+                        <li><span class="check-icon">✓</span> REST APIs</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                        </svg>
+                        <h3>Tecnologías Emergentes</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="check-icon">✓</span> Inteligencia Artificial</li>
+                        <li><span class="check-icon">✓</span> Low Code</li>
+                        <li><span class="check-icon">✓</span> Automatización</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="9" y1="3" x2="9" y2="21"></line>
+                        </svg>
+                        <h3>Herramientas</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="check-icon">✓</span> WordPress</li>
+                        <li><span class="check-icon">✓</span> Microsoft Office</li>
+                        <li><span class="check-icon">✓</span> Power BI</li>
+                        <li><span class="check-icon">✓</span> Excel</li>
+                        <li><span class="check-icon">✓</span> Outlook</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="info-cards">
+                <div class="info-card">
+                    <h3>Idiomas</h3>
+                    <ul>
+                        <li>Español - Nativo</li>
+                        <li>Inglés - Niveles A1, A2, B1, B2, C1</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>Habilidades Personales</h3>
+                    <ul>
+                        <li>Creatividad e Innovación</li>
+                        <li>Trabajo en Equipo</li>
+                        <li>Liderazgo</li>
+                        <li>Seriedad y Profesionalismo</li>
+                        <li>Adaptabilidad al Cambio</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>Educación</h3>
+                    <ul>
+                        <li>Ing. Software - 6to Semestre</li>
+                        <li>Técnico en Programación</li>
+                        <li>Bachillerato con Honores</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Formación Académica</h2>
+            
+            <div class="education-list">
+                <div class="education-item">
+                    <div class="education-header">
+                        <div>
+                            <h3>Profesional en Ingeniería de Software</h3>
+                            <p>Uniempresarial</p>
+                        </div>
+                        <span>Enero 2023 - Presente</span>
+                    </div>
+                    <p>Actualmente cursando 6to semestre</p>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <div>
+                            <h3>Inglés - English for Everyone</h3>
+                            <p>English for Everyone</p>
+                        </div>
+                        <span>Septiembre 2023 - Presente</span>
+                    </div>
+                    <p>Niveles A1, A2, B1, B2 completados</p>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <div>
+                            <h3>Técnico de Programación de Software</h3>
+                            <p>SENA</p>
+                        </div>
+                        <span>Enero 2020 - Noviembre 2022</span>
+                    </div>
+                    <p>Técnico culminado con éxito</p>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <div>
+                            <h3>Bachillerato Académico</h3>
+                            <p>Entre Nubes Sur Oriental</p>
+                        </div>
+                        <span>Culminado en 2022</span>
+                    </div>
+                    <p>Graduada con honores académicos y mejor ICFES de la promoción</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-muted">
+        <div class="container">
+            <h2 class="section-title">Experiencia Profesional</h2>
+            
+            <div class="experience-list">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Desarrolladora de Software</h3>
+                            <a href="https://topgroup.tech" target="_blank" rel="noopener noreferrer" class="company-link">
+                                TOP GROUP COLOMBIA S.A.S.
+                                <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                        <span>Enero 2025 - Julio 2025</span>
+                    </div>
+                    <ul>
+                        <li>• Diseño de microservicio para el área de Recursos Humanos, para la solicitud y radicación de certificados laborales</li>
+                        <li>• Utilización de herramientas y conocimientos escalables en desarrollo de software</li>
+                    </ul>
+                    <p class="reference">
+                        <strong>Referencia:</strong> Pedro Ardila - Gerente de Desarrollo (pardila@topgroup.tech)
+                    </p>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Soporte Técnico y Administración</h3>
+                            <a href="https://topgroup.tech" target="_blank" rel="noopener noreferrer" class="company-link">
+                                TOP GROUP COLOMBIA S.A.S.
+                                <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                        <span>Enero 2024 - Julio 2024</span>
+                    </div>
+                    <ul>
+                        <li>• Soporte técnico en computadores</li>
+                        <li>• Organización de inventario corporativo</li>
+                        <li>• Administración y diseño de bases de datos</li>
+                    </ul>
+                    <p class="reference">
+                        <strong>Referencia:</strong> Nicolás Alberto Penott Sapene - Responsable Seguridad y Cloud (npenott@topgroup.tech)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="images/cafbook.jpg" alt="CAFBOOK" class="project-image">
+                        <div class="project-overlay">
+                            <button class="btn btn-secondary btn-sm" onclick="window.open('https://github.com/Anaid0/CAFBOOK.git', '_blank')">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                </svg>
+                                Ver Código
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>CAFBOOK</h3>
+                        <p>Aplicación móvil que centraliza el sector agrario con el fin de que ganaderos, agricultores y demás aprendan y compartan sobre su vida en el campo, brindando tips para los demás usuarios por medio de videos, documentos o foros.</p>
+                        <div class="project-tags">
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">React Native</span>
+                            <span class="tag">Backend</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="images/ACC.jpg" alt="Animal Case Clinic" class="project-image">
+                        <div class="project-overlay">
+                            <button class="btn btn-secondary btn-sm" onclick="window.open('https://github.com/Anaid0/Animal-Case-Clinic.git', '_blank')">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                </svg>
+                                Ver Código
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Animal Case Clinic</h3>
+                        <p>Página para una clínica veterinaria, donde se puede tener un registro de los pacientes y sus dueños. Gestiona todos los servicios prestados por la clínica veterinaria y lleva un control completo.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Java</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="images/modern-ecommerce-website.png" alt="Pretty Wealthy Woman" class="project-image">
+                        <div class="project-overlay">
+                            <button class="btn btn-secondary btn-sm" onclick="window.open('https://github.com/Anaid0/Pretty-wealthy-woman.git', '_blank')">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                </svg>
+                                Ver Código
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Pretty Wealthy Woman</h3>
+                        <p>Tienda de maquillaje con pasarela de pago, con su respectiva parte administrativa para realizar los CRUDs de los productos.</p>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="images/task-management-dashboard.png" alt="CENTAUROBANK" class="project-image">
+                        <div class="project-overlay">
+                            <button class="btn btn-secondary btn-sm" onclick="window.open('https://github.com/Anaid0/CENTAUROBANK.git', '_blank')">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                </svg>
+                                Ver Código
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>CENTAUROBANK</h3>
+                        <p>Plataforma que gestiona funcionalidades de cuentas. Automatiza ciertos procesos bancarios a nivel básico.</p>
+                        <div class="project-tags">
+                            <span class="tag">Backend</span>
+                            <span class="tag">Automatización</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contáctame</h2>
+            
+            <div class="contact-grid">
+                <a href="mailto:dvaragasp@uniempresarial.edu.co" class="contact-card">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <div>
+                        <div class="contact-label">Email Institucional</div>
+                        <div class="contact-value">dvaragasp@uniempresarial.edu.co</div>
+                    </div>
+                </a>
+
+                <a href="tel:+573059137446" class="contact-card">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <div>
+                        <div class="contact-label">Teléfono</div>
+                        <div class="contact-value">+57 305 913 7446</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="social-box">
+                <h3>Redes Sociales</h3>
+                <div class="social-buttons">
+                    <a href="https://github.com/Anaid0" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                            <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                        </svg>
+                        GitHub
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/diana-vargas-082b51327" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        LinkedIn
+                    </a>
+                    
+                    <a href="mailto:dvaragasp@uniempresarial.edu.co" class="btn btn-outline btn-lg">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        Email
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-cta">
+                <p>¿Interesado en trabajar juntos? No dudes en contactarme</p>
+                <a href="mailto:dvaragasp@uniempresarial.edu.co" class="btn btn-primary btn-lg">Enviar Mensaje</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Diana María Vargas Pedraza. Todos los derechos reservados.</p>
+            <p>Desarrollado con ❤️ usando HTML, CSS y JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
