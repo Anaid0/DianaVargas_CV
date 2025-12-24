@@ -46,7 +46,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const downloadBtn = document.getElementById('downloadCV');
     if (downloadBtn) {
         downloadBtn.addEventListener('click', () => {
-            alert('Función de descarga de CV no disponible');
+            // Create a temporary anchor element to trigger download
+            const link = document.createElement('a');
+            link.href = 'images/DIANA_VARGAS_CV(formatoInstitucional).pdf';
+            link.download = 'DIANA_VARGAS_CV.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         });
     }
 
